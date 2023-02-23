@@ -1,0 +1,14 @@
+# Below is an template
+# - date: March 28
+#  topic:  Intro / Metrics
+#  read: 
+#    - {name: Lecture Slides-0 (Class Overview), url: "@s/0-ClassOverview.pptx"}
+#    - {name: Lecture Slides-1 (Intro), url: "@s/1-Intro.pptx"}
+#    - "Chapter 1 of HP (that's *Hennessy and Patterson* not Harry Potter)"
+#    - {name: "Power: A First-Class Architectural Design Constraint", url: "@p/01_first-class.pdf", required: y, canvas: "7267681"}
+#    - {name: "Moore's Law", url: "@p/01_moores-law.pdf"}
+#      # - {name: "Producing Wrong Data Without Doing Anything Obviously Wrong!", url: "@p/01_producing-wrong-data.pdf"}
+#      # - {name: "Characterizing Computer Performance", url: "@p/01_performance.pdf"}
+#  hw:
+#    - {name: "HW 1 Out!", url: "hw/1.html"}
+

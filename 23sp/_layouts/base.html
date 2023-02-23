@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSE 599 — {{ page.title }}</title>
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+                
+        <link href="{{ site.base }}/css/bootstrap.min.css" 			 rel="stylesheet">
+        <!-- <link href="{{ site.base }}/css/bootstrap-theme.min.css" rel="stylesheet"> -->
+        <link href="{{ site.base }}/css/theme.css" 							 rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+				
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+				<script src="{{ site.base }}/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body>
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-48525616-1', 'washington.edu');
+        ga('send', 'pageview');
+      </script>
+      
+        <div class="container">
+          
+          <div class="page-header">
+						<h1>
+              {{ page.title }} <small>{{ page.subtitle }}</small>
+              
+              <div class="pull-right">
+                              
+              <a href="{{ site.base }}/index.html">
+                <img src="{{ site.base }}/img/cseLogo.png" alt="CSE Logo"/>
+                <small>CSE 599M</small>
+              </a>              
+              
+              </div>
+            </h1>
+					</div>
+          
+          {{ content }}
+                    
+          <div class="footer">
+            <a href="http://www.cs.washington.edu/">Computer Science &amp;
+              Engineering</a>
+            at the
+            <a href="http://www.washington.edu/">University of
+              Washington</a>
+          </div>
+        </div>
+
+    </body>
+</html>
