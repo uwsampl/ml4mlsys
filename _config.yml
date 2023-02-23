@@ -9,4 +9,4 @@ url: https://courses.cs.washington.edu/courses/cse599m/23sp/
 
 canvas: N/A
 
-exclude: [README.md, Makefile]
+exclude: [README.md, Makefile, deploy.sh]

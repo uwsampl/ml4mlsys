@@ -1,0 +1,25 @@
+name: deploy
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout ungenerated site
+      uses: actions/checkout@v3
+    - name: Build Jekyll Website
+      run: |
+        docker run --rm --volume="$PWD:/srv/jekyll" jekyll/jekyll:4 make
+    - name: Deploy through rsync 
+      uses: burnett01/rsync-deployments@5.2.1
+      with:
+        switches: -vzrO
+        path: _site/
+        remote_path: ${{ secrets.DEPLOY_PATH }}
+        remote_host: ${{ secrets.DEPLOY_HOST }}
+        remote_port: ${{ secrets.DEPLOY_PORT }}
+        remote_user: ${{ secrets.DEPLOY_USER }}
+        remote_key: ${{ secrets.DEPLOY_KEY }}
